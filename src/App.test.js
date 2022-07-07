@@ -1,8 +1,19 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('Redux App', () => {
+
+  it('test welcome', () => {
+    render(<App />)
+    expect(screen.getByText("Hello world")).toBeInTheDocument();
+  });
+
+
+
+
+
+
+
+
+
+})
